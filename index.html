@@ -3,29 +3,20 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#302116" />
-    <meta name="description"
-        content="Depilação a laser com tecnologia segura, condições especiais e avaliação gratuita." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pacotes de depilação a laser da Clau Estética." />
     <title>Clau Estética | Depilação a laser</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23302116'/%3E%3Cpath d='M42 15c-13 0-21 7-21 17 0 10 7 17 19 17 5 0 10-1 14-4l-5-7c-2 2-5 3-8 3-6 0-10-3-10-9s4-9 11-9c3 0 6 1 8 3l5-7c-3-3-8-4-13-4Z' fill='%23f6ebd9'/%3E%3C/svg%3E" />
     <style>
         :root {
-            --ink: #4c311b;
-            --clay: #b77c32;
-            --caramel: #d1a45f;
-            --cream: #fcf4e6;
-            --paper: #fffdf8;
-            --line: #e8cfa9;
-            --muted: #896a49;
-            --green: #23c968;
-            --serif: "DM Sans", Arial, sans-serif;
-            --sans: "DM Sans", Arial, sans-serif;
+            --ink: #342315;
+            --brown: #5a351b;
+            --gold: #bc8138;
+            --gold-light: #e8c98e;
+            --paper: #fffaf2;
+            --cream: #f6ecdc;
+            --line: #e7d5bb;
+            --green: #1ebf63;
+            --shell: min(1140px, calc(100% - 40px));
         }
 
         * {
@@ -38,11 +29,9 @@
 
         body {
             margin: 0;
-            background: var(--cream);
+            background: var(--paper);
             color: var(--ink);
-            font-family: var(--sans);
-            font-size: 16px;
-            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         a {
@@ -51,107 +40,127 @@
         }
 
         .shell {
-            width: min(1160px, calc(100% - 40px));
+            width: var(--shell);
             margin: auto;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 13px;
-            border: 1px solid currentColor;
-            border-radius: 999px;
-            text-transform: uppercase;
-            font-size: .68rem;
-            font-weight: 700;
-            letter-spacing: .16em;
-            line-height: 1;
-        }
-
-        .eyebrow i {
-            width: 5px;
-            height: 5px;
-            border-radius: 99px;
-            background: currentColor;
         }
 
         .site-header {
             position: absolute;
-            z-index: 2;
+            z-index: 4;
             inset: 0 0 auto;
-            color: #fff9ef;
+            color: #fffaf2;
         }
 
         .header-inner {
-            min-height: 84px;
+            min-height: 82px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
+            gap: 24px;
         }
 
         .brand {
-            font-family: var(--sans);
-            font-size: 1.15rem;
-            font-weight: 700;
-            letter-spacing: -.04em;
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: -.045em;
         }
 
         .brand span {
-            color: #ebc37e;
+            color: var(--gold-light);
             font-style: italic;
         }
 
         .nav {
             display: flex;
-            gap: 25px;
-            color: #f9eddc;
-            font-size: .88rem;
+            align-items: center;
+            gap: 27px;
+            font-size: .83rem;
+            font-weight: 700;
+        }
+
+        .nav a {
+            opacity: .88;
+        }
+
+        .nav a:hover {
+            opacity: 1;
+        }
+
+        .header-cta,
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            border-radius: 999px;
+            font-size: .82rem;
+            font-weight: 800;
         }
 
         .header-cta {
-            padding: 11px 17px;
-            border-radius: 999px;
-            background: #fff9ef;
-            color: var(--ink);
-            font-size: .8rem;
-            font-weight: 700;
+            padding: 0 18px;
+            background: #fffaf2;
+            color: var(--brown);
         }
 
         .hero {
             position: relative;
             overflow: hidden;
-            min-height: 680px;
-            color: #fffaf1;
-            background: #7a542b;
+            min-height: 630px;
+            color: #fffaf2;
+            background: #7e4d25;
         }
 
         .hero::before {
             content: "";
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 78% 21%, rgba(255, 230, 174, .54), transparent 18%), radial-gradient(circle at 55% 82%, rgba(220, 170, 92, .38), transparent 32%), linear-gradient(115deg, #654321 5%, #9c6d36 53%, #d5ae6c 130%);
+            background: linear-gradient(103deg, #48270f 0%, #815020 50%, #c79a57 100%);
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            right: 36%;
+            bottom: -180px;
+            width: 550px;
+            height: 550px;
+            border: 1px solid rgba(255, 242, 215, .22);
+            border-radius: 50%;
         }
 
         .hero-grid {
             position: relative;
             z-index: 1;
-            min-height: 680px;
+            min-height: 630px;
             display: grid;
-            grid-template-columns: 1.05fr .95fr;
+            grid-template-columns: 1fr .93fr;
+            gap: 64px;
             align-items: end;
-            padding: 137px 0 62px;
-            gap: 40px;
+            padding: 130px 0 68px;
         }
 
         .hero-copy {
-            padding-bottom: 20px;
+            padding-bottom: 27px;
         }
 
-        .hero-copy .eyebrow {
-            color: #f6d59f;
-            border-color: rgba(246, 213, 159, .55);
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: #f4d69f;
+            font-size: .67rem;
+            font-weight: 800;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #f4d69f;
         }
 
         h1,
@@ -163,474 +172,371 @@
 
         h1 {
             max-width: 600px;
-            margin: 21px 0;
-            font-family: var(--sans);
-            font-size: clamp(2.65rem, 5.1vw, 4.9rem);
-            font-weight: 700;
+            margin: 21px 0 20px;
+            font-size: clamp(2.7rem, 5.5vw, 5.2rem);
+            line-height: .94;
             letter-spacing: -.075em;
-            line-height: .93;
         }
 
         h1 em {
-            color: #f5cf8d;
-            font-style: italic;
-            white-space: nowrap;
+            color: #f4cb7d;
+            font-style: normal;
         }
 
-        .hero-copy>p {
-            max-width: 500px;
-            color: #f8e8d2;
-            font-size: 1.13rem;
-            line-height: 1.6;
+        .hero-copy p {
+            max-width: 460px;
+            margin-bottom: 31px;
+            color: #faeeda;
+            font-size: 1.05rem;
+            line-height: 1.65;
         }
 
         .button {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            gap: 11px;
-            min-height: 53px;
+            gap: 10px;
             padding: 0 23px;
-            border: 0;
-            border-radius: 999px;
             background: var(--green);
             color: white;
-            box-shadow: 0 12px 25px rgba(11, 91, 41, .25);
-            font-size: .92rem;
-            font-weight: 700;
-            letter-spacing: .01em;
-            transition: transform .2s, box-shadow .2s;
+            box-shadow: 0 14px 28px rgba(10, 65, 31, .25);
         }
 
-        .button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 29px rgba(11, 91, 41, .35);
+        .hero-note {
+            display: block;
+            margin-top: 14px;
+            color: #e7cfa8;
+            font-size: .77rem;
         }
 
-        .button .whatsapp {
-            display: grid;
-            place-items: center;
-            width: 22px;
-            height: 22px;
-            border: 1px solid rgba(255, 255, 255, .7);
-            border-radius: 50%;
-        }
-
-        .button .whatsapp svg {
-            width: 12px;
-            height: 12px;
-            fill: currentColor;
-        }
-
-        .hero-actions {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 22px;
-            margin-top: 32px;
-        }
-
-        .hero-actions small {
-            color: #ead9bf;
-            font-size: .78rem;
-        }
-
-        .hero-actions small strong {
-            color: #fff8eb;
-        }
-
-        .hero-art {
-            position: relative;
+        .hero-image {
             align-self: stretch;
-            min-height: 438px;
-            border-radius: 230px 230px 20px 20px;
+            min-height: 420px;
+            border: 1px solid rgba(255, 250, 242, .44);
+            border-radius: 220px 220px 24px 24px;
             overflow: hidden;
-            border: 1px solid rgba(255, 245, 229, .38);
-            background: #b68651;
-            box-shadow: 20px 24px 60px rgba(20, 9, 0, .3);
+            background: #d2a96c;
+            box-shadow: 20px 25px 60px rgba(37, 18, 4, .34);
         }
 
-        .hero-art img {
+        .hero-image img {
+            display: block;
             width: 100%;
             height: 100%;
-            display: block;
             object-fit: cover;
             object-position: 50% 52%;
-            filter: saturate(.82) sepia(.15) contrast(1.02);
+            filter: saturate(.82) sepia(.12);
         }
 
-        .proof {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+        .trust {
+            position: relative;
             z-index: 2;
             border-top: 1px solid rgba(255, 255, 255, .16);
         }
 
-        .proof-inner {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            padding: 18px 0;
-            color: #e8d2b5;
+        .trust-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 16px 0;
+            color: #edd5ae;
+            font-size: .65rem;
+            font-weight: 800;
+            letter-spacing: .1em;
+            text-align: center;
             text-transform: uppercase;
-            font-size: .66rem;
-            font-weight: 700;
-            letter-spacing: .13em;
         }
 
-        .proof-inner span::before {
-            content: "•";
-            color: #f2c982;
-            margin-right: 9px;
+        .prices {
+            padding: 108px 0 95px;
         }
 
-        .pricing {
-            padding: 110px 0;
-        }
-
-        .section-heading {
+        .section-intro {
             display: flex;
-            justify-content: space-between;
             align-items: end;
+            justify-content: space-between;
             gap: 30px;
-            margin-bottom: 43px;
+            margin-bottom: 37px;
         }
 
-        .section-heading .eyebrow {
-            color: var(--clay);
-            border-color: #dfc49e;
+        .section-kicker {
+            margin-bottom: 12px;
+            color: var(--gold);
+            font-size: .68rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+            text-transform: uppercase;
         }
 
         h2 {
-            margin: 16px 0 0;
-            font-family: var(--sans);
-            font-size: clamp(2.25rem, 4vw, 4rem);
-            font-weight: 700;
-            line-height: .98;
+            margin: 0;
+            font-size: clamp(2rem, 3.8vw, 3.45rem);
+            line-height: 1;
             letter-spacing: -.065em;
         }
 
-        h2 em {
-            color: var(--clay);
-            font-style: italic;
-        }
-
-        .heading-note {
-            max-width: 270px;
-            color: var(--muted);
-            font-size: .94rem;
+        .section-intro p {
+            max-width: 330px;
+            margin: 0;
+            color: #7c6652;
+            font-size: .95rem;
             line-height: 1.55;
         }
 
-        .price-grid {
+        .package-stack {
+            display: grid;
+            gap: 23px;
+        }
+
+        .package {
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 25px;
+            background: #fffdf9;
+            box-shadow: 0 16px 36px rgba(74, 43, 15, .055);
+        }
+
+        .package-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 25px 30px 22px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .package-title {
+            margin: 0;
+            font-size: 1.38rem;
+            letter-spacing: -.045em;
+        }
+
+        .package-top small {
+            display: block;
+            margin-top: 6px;
+            color: var(--gold);
+            font-size: .62rem;
+            font-weight: 800;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+        }
+
+        .session-tag {
+            flex: none;
+            padding: 8px 12px;
+            border: 1px solid #e4cfae;
+            border-radius: 999px;
+            color: #86674a;
+            font-size: .69rem;
+            font-weight: 800;
+        }
+
+        .package-list {
+            margin: 0;
+            padding: 0 30px;
+            list-style: none;
+        }
+
+        .package-list li {
+            display: grid;
+            grid-template-columns: 1fr 165px 135px;
+            align-items: center;
+            gap: 18px;
+            min-height: 64px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .package-list li:last-child {
+            border-bottom: 0;
+        }
+
+        .procedure {
+            font-size: .94rem;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .area {
+            color: #907a65;
+            font-size: .75rem;
+            text-align: right;
+        }
+
+        .price {
+            color: var(--gold);
+            font-size: 1.04rem;
+            font-weight: 800;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .combo-section {
+            padding: 88px 0;
+            background: #5d391e;
+            color: #fffaf2;
+        }
+
+        .combo-section .section-intro {
+            margin-bottom: 34px;
+        }
+
+        .combo-section .section-kicker {
+            color: #f1cc8f;
+        }
+
+        .combo-section .section-intro p {
+            color: #ead4ae;
+        }
+
+        .combos {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 20px;
         }
 
-        .price-card {
-            padding: 29px 29px 8px;
-            border: 1px solid var(--line);
-            border-radius: 22px;
-            background: rgba(255, 253, 250, .85);
-            box-shadow: 0 13px 30px rgba(72, 43, 21, .045);
-        }
-
-        .price-card.full {
-            grid-column: span 2;
-        }
-
-        .card-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            gap: 18px;
-            padding-bottom: 17px;
-            border-bottom: 1px solid var(--line);
-        }
-
-        h3 {
-            margin: 0;
-            font-family: var(--sans);
-            font-size: 1.38rem;
-            font-weight: 700;
-            letter-spacing: -.055em;
-            line-height: 1.08;
-        }
-
-        .card-head small {
-            display: block;
-            margin-top: 9px;
-            color: var(--clay);
-            text-transform: uppercase;
-            font-size: .62rem;
-            font-weight: 700;
-            letter-spacing: .16em;
-        }
-
-        .from {
-            flex-shrink: 0;
-            padding: 10px 12px;
-            border: 1px solid #e7ceb0;
-            border-radius: 99px;
-            color: #8d7560;
-            font-size: .7rem;
-            font-weight: 700;
-            white-space: nowrap;
-        }
-
-        .from b {
-            color: var(--clay);
-            font-family: var(--serif);
-            font-size: .99rem;
-        }
-
-        .offer {
-            display: grid;
-            grid-template-columns: 1fr 74px 106px;
-            align-items: center;
-            gap: 12px;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--line);
-        }
-
-        .offer:last-child {
-            border-bottom: 0;
-        }
-
-        .service {
-            font-size: .91rem;
-            line-height: 1.28;
-        }
-
-        .standard {
-            color: #9a8672;
-            font-size: .77rem;
-            text-align: right;
-        }
-
-        .installment {
-            min-height: 33px;
-            padding-left: 12px;
-            border-left: 1px solid #e5c9a6;
-            color: var(--clay);
-            font-family: var(--sans);
-            font-size: .9rem;
-            font-weight: 700;
-            line-height: 1;
-            text-align: right;
-        }
-
-        .installment small {
-            display: block;
-            margin-top: 3px;
-            color: #b88955;
-            font-family: var(--sans);
-            font-size: .55rem;
-            font-weight: 700;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-        }
-
-        .combo {
-            padding: 94px 0;
-            background: linear-gradient(120deg, #bd8b48, #d9b06d);
-            color: #fff9ef;
-        }
-
-        .combo .section-heading {
-            display: block;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-
-        .combo .eyebrow {
-            color: #fff4df;
-            border-color: rgba(255, 244, 223, .35);
-        }
-
-        .combo h2 {
-            margin-top: 15px;
-            font-size: clamp(2.6rem, 5vw, 4.5rem);
-        }
-
-        .combo h2 em {
-            color: #fff9ef;
-        }
-
-        .combo-wrap {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 340px));
-            gap: 18px;
-            justify-content: center;
-        }
-
         .combo-card {
-            position: relative;
-            min-height: 272px;
-            padding: 28px;
+            min-height: 220px;
+            padding: 31px;
             border-radius: 22px;
-            background: #fffdfa;
+            background: #fffaf2;
             color: var(--ink);
-            box-shadow: 0 12px 25px rgba(74, 45, 17, .15);
         }
 
-        .popular {
-            position: absolute;
-            top: -13px;
-            left: 20px;
-            padding: 8px 12px;
-            border-radius: 99px;
-            background: var(--ink);
-            color: #fff2dd;
+        .combo-label {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 7px 11px;
+            border-radius: 999px;
+            background: #f8ead4;
+            color: #a3692a;
+            font-size: .62rem;
+            font-weight: 800;
+            letter-spacing: .11em;
             text-transform: uppercase;
-            font-size: .57rem;
-            font-weight: 700;
-            letter-spacing: .12em;
         }
 
         .combo-card h3 {
-            margin: 0 0 12px;
-            color: #59371d;
-            font-size: 1.3rem;
-        }
-
-        .combo-card>p {
-            min-height: 48px;
-            margin-bottom: 18px;
-            font-size: .87rem;
-            line-height: 1.4;
-        }
-
-        .combo-price {
-            padding: 13px 15px;
-            border: 1px solid #ead8bd;
-            border-radius: 14px;
-            background: #fdf6ea;
-        }
-
-        .combo-price span {
-            display: block;
-            color: #75604e;
-            font-size: .7rem;
-        }
-
-        .combo-price b {
-            display: block;
-            font-family: var(--sans);
-            font-size: 1.72rem;
-            font-weight: 700;
-            letter-spacing: -.07em;
-            line-height: 1;
-        }
-
-        .combo-price small {
-            color: #92745a;
-            font-size: .69rem;
-        }
-
-        .combo-foot {
-            margin: 21px auto 0;
-            max-width: 560px;
-            color: #fff2dc;
-            text-align: center;
-            font-size: .73rem;
-            line-height: 1.5;
-        }
-
-        .final-cta {
-            padding: 115px 0;
-        }
-
-        .cta-panel {
-            padding: 65px min(7vw, 84px);
-            border: 1px solid var(--line);
-            border-radius: 30px;
-            background: linear-gradient(110deg, #fffdf8, #f7e6c8);
-            text-align: center;
-            box-shadow: 0 16px 35px rgba(100, 64, 23, .08);
-        }
-
-        .diamond {
-            display: grid;
-            place-items: center;
-            width: 41px;
-            height: 41px;
-            margin: 0 auto 22px;
-            border: 1px solid #e8d1af;
-            border-radius: 50%;
-            color: var(--clay);
-            font-size: 1.1rem;
-        }
-
-        .cta-panel h2 {
-            margin-bottom: 25px;
-            font-size: clamp(2.3rem, 4.4vw, 4.4rem);
-        }
-
-        .cta-panel .button {
-            min-width: min(400px, 100%);
-        }
-
-        .cta-panel p {
-            margin: 18px 0 0;
-            color: #776351;
-            font-size: .85rem;
-        }
-
-        footer {
-            padding: 0 0 35px;
-            color: #806c56;
-            text-align: center;
-        }
-
-        .footer-brand {
-            margin-bottom: 9px;
-            color: var(--ink);
-            font-family: var(--sans);
-            font-size: 1.28rem;
-            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1.35rem;
             letter-spacing: -.045em;
         }
 
-        footer small {
-            text-transform: uppercase;
-            font-size: .61rem;
-            font-weight: 700;
-            letter-spacing: .17em;
+        .combo-card p {
+            min-height: 42px;
+            margin-bottom: 23px;
+            color: #725d49;
+            font-size: .92rem;
+            line-height: 1.45;
         }
 
-        .mobile-book {
+        .combo-price {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            padding-top: 17px;
+            border-top: 1px solid #ead9c2;
+        }
+
+        .combo-price span {
+            color: #94765a;
+            font-size: .71rem;
+            font-weight: 700;
+        }
+
+        .combo-price strong {
+            color: var(--gold);
+            font-size: 1.55rem;
+            letter-spacing: -.05em;
+        }
+
+        .how {
+            padding: 94px 0;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 34px;
+        }
+
+        .step {
+            padding: 26px;
+            border: 1px solid var(--line);
+            border-radius: 19px;
+            background: #fffdf9;
+        }
+
+        .step-number {
+            color: var(--gold);
+            font-size: .72rem;
+            font-weight: 800;
+            letter-spacing: .14em;
+        }
+
+        .step h3 {
+            margin: 15px 0 8px;
+            font-size: 1.08rem;
+        }
+
+        .step p {
+            margin: 0;
+            color: #796450;
+            font-size: .86rem;
+            line-height: 1.55;
+        }
+
+        .final {
+            padding: 0 0 90px;
+        }
+
+        .final-box {
+            padding: 60px 30px;
+            border-radius: 26px;
+            background: linear-gradient(112deg, #f0d39f, #c58a42);
+            color: #39220e;
+            text-align: center;
+        }
+
+        .final-box h2 {
+            max-width: 600px;
+            margin: 0 auto 17px;
+        }
+
+        .final-box p {
+            margin-bottom: 25px;
+            font-size: .97rem;
+        }
+
+        .final-box .button {
+            background: #5d391e;
+            box-shadow: none;
+        }
+
+        footer {
+            padding: 0 0 30px;
+            color: #816d58;
+            font-size: .72rem;
+            text-align: center;
+        }
+
+        .mobile-cta {
             display: none;
         }
 
         @media (max-width:780px) {
-            .shell {
-                width: min(100% - 28px, 570px);
-            }
-
-            .nav {
-                display: none;
+            :root {
+                --shell: min(100% - 30px, 580px);
             }
 
             .header-inner {
                 min-height: 72px;
             }
 
-            .brand-logo {
-                width: 135px;
-                height: 52px;
-            }
-
-            .brand-logo img {
-                width: 135px;
+            .nav {
+                display: none;
             }
 
             .header-cta {
-                padding: 10px 13px;
-                font-size: .72rem;
+                min-height: 39px;
+                padding: 0 12px;
+                font-size: .7rem;
             }
 
             .hero {
@@ -640,8 +546,8 @@
             .hero-grid {
                 min-height: auto;
                 grid-template-columns: 1fr;
-                padding: 116px 0 95px;
-                gap: 28px;
+                gap: 32px;
+                padding: 112px 0 36px;
             }
 
             .hero-copy {
@@ -649,159 +555,105 @@
             }
 
             h1 {
-                font-size: clamp(2.85rem, 13.5vw, 4.25rem);
+                font-size: clamp(2.55rem, 13vw, 4.1rem);
             }
 
-            .hero-copy>p {
-                font-size: 1rem;
-            }
-
-            .hero-art {
-                min-height: 360px;
-                width: min(100%, 420px);
+            .hero-image {
+                min-height: 345px;
+                max-width: 420px;
+                width: 100%;
                 justify-self: center;
             }
 
-            .proof {
-                display: none;
-            }
-
-            .pricing {
-                padding: 73px 0;
-            }
-
-            .section-heading {
-                display: block;
-                margin-bottom: 29px;
-            }
-
-            .heading-note {
-                margin-top: 18px;
-            }
-
-            .price-grid {
+            .trust-row {
                 grid-template-columns: 1fr;
+                gap: 9px;
+                text-align: left;
             }
 
-            .price-card,
-            .price-card.full {
-                grid-column: span 1;
+            .prices,
+            .how {
+                padding: 72px 0;
             }
 
-            .price-card {
-                padding: 23px 19px 4px;
-                border-radius: 18px;
+            .section-intro {
+                display: block;
+                margin-bottom: 25px;
             }
 
-            .card-head {
-                gap: 10px;
+            .section-intro p {
+                margin-top: 17px;
             }
 
-            h3 {
-                font-size: 1.47rem;
+            .package-top {
+                padding: 21px 19px;
             }
 
-            .from {
-                padding: 8px 9px;
-                font-size: .62rem;
+            .package-title {
+                font-size: 1.18rem;
             }
 
-            .offer {
-                grid-template-columns: 1fr 58px 83px;
-                gap: 7px;
+            .package-list {
+                padding: 0 19px;
+            }
+
+            .package-list li {
+                grid-template-columns: 1fr auto;
+                gap: 8px;
                 padding: 14px 0;
             }
 
-            .service {
-                font-size: .82rem;
+            .procedure {
+                font-size: .84rem;
             }
 
-            .standard {
-                font-size: .7rem;
+            .area {
+                grid-column: 1;
+                font-size: .68rem;
+                text-align: left;
             }
 
-            .installment {
-                padding-left: 7px;
-                font-size: .9rem;
+            .price {
+                grid-column: 2;
+                grid-row: 1 / span 2;
+                align-self: center;
+                font-size: .94rem;
             }
 
-            .combo {
+            .combo-section {
                 padding: 65px 0;
             }
 
-            .combo-wrap {
+            .combos,
+            .steps {
                 grid-template-columns: 1fr;
             }
 
-            .final-cta {
-                padding: 70px 0 95px;
+            .combo-card {
+                min-height: 0;
+                padding: 26px;
             }
 
-            .cta-panel {
-                padding: 47px 18px;
-                border-radius: 23px;
+            .final {
+                padding-bottom: 86px;
             }
 
-            .cta-panel .button {
-                min-height: 58px;
-                padding: 0 17px;
-                font-size: .82rem;
+            .final-box {
+                padding: 48px 21px;
             }
 
-            .mobile-book {
-                display: flex;
+            .mobile-cta {
                 position: fixed;
-                z-index: 5;
+                z-index: 6;
                 right: 14px;
                 bottom: 14px;
                 left: 14px;
+                display: flex;
+                min-height: 56px;
             }
 
-            .mobile-book .button {
-                width: 100%;
-            }
-        }
-
-        @media (max-width:780px) {
-            .brand-logo {
-                gap: 7px;
-                height: 58px;
-            }
-
-            .brand-mark {
-                width: 52px;
-                height: 56px;
-            }
-
-            .brand-logo img {
-                width: 240px;
-                transform: translateX(-96px);
-            }
-
-            .brand-name {
-                font-size: .87rem;
-            }
-        }
-
-        @media (max-width:390px) {
-            h1 {
-                font-size: 2.75rem;
-            }
-
-            .hero-art {
-                min-height: 300px;
-            }
-
-            .offer {
-                grid-template-columns: 1fr 52px 75px;
-            }
-
-            .standard {
-                font-size: .65rem;
-            }
-
-            .installment {
-                font-size: .82rem;
+            .mobile-cta.button {
+                width: auto;
             }
         }
     </style>
@@ -809,150 +661,145 @@
 
 <body>
     <header class="site-header">
-        <div class="shell header-inner">
-            <a class="brand" href="#inicio">Clau <span>Estética</span></a>
-            <nav class="nav" aria-label="Navegação principal"><a href="#servicos">Serviços</a><a
-                    href="#combos">Combos</a><a href="#avaliacao">Avaliação</a></nav>
-            <a class="header-cta"
-                href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20gratuita."
-                target="_blank" rel="noopener">Quero agendar</a>
+        <div class="shell header-inner"><a class="brand" href="#inicio">Clau <span>Estética</span></a>
+            <nav class="nav" aria-label="Navegação principal"><a href="#pacotes">Pacotes</a><a
+                    href="#combos">Combos</a><a href="#como-funciona">Como funciona</a></nav><a class="header-cta"
+                href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o."
+                target="_blank" rel="noopener">Agendar avaliação</a>
         </div>
     </header>
     <main>
         <section class="hero" id="inicio">
             <div class="shell hero-grid">
-                <div class="hero-copy">
-                    <span class="eyebrow"><i></i> Depilação a laser · tecnologia segura</span>
-                    <h1>ADEUS GILETE.<br><em>OLÁ,</em> LIBERDADE.</h1>
-                    <p>Pele lisa todos os dias, sem pelo encravado, sem cera e sem a vergonha de mostrar sua pele.</p>
-                    <div class="hero-actions">
-                        <a class="button"
-                            href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20gratuita."
-                            target="_blank" rel="noopener"><span class="whatsapp" aria-hidden="true"><svg
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13 1.6 5.93L.14 24l6.4-1.67a11.78 11.78 0 0 0 5.54 1.41h.01c6.53 0 11.83-5.31 11.83-11.84 0-3.16-1.23-6.13-3.4-8.42Zm-8.44 18.27a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.8.99 1.02-3.7-.24-.38a9.84 9.84 0 1 1 8.39 4.67Zm5.4-7.37c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-1.78-.89-2.95-1.59-4.13-3.61-.31-.53.31-.49.89-1.64.1-.2.05-.37-.03-.52-.08-.15-.68-1.64-.93-2.24-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z" />
-                                </svg></span> QUERO MINHA AVALIAÇÃO</a>
-                        <small><strong>WhatsApp</strong><br>(11) 9 6135-5909</small>
-                    </div>
+                <div class="hero-copy"><span class="eyebrow">Depilação a laser</span>
+                    <h1>Sua pele livre.<br><em>Sua rotina mais leve.</em></h1>
+                    <p>Escolha o pacote ideal para você e descubra uma rotina com mais praticidade, conforto e
+                        liberdade.</p><a class="button"
+                        href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o."
+                        target="_blank" rel="noopener">Quero minha avaliação</a><small class="hero-note">Atendimento
+                        pelo WhatsApp:
+                        (11) 9 6135-5909</small>
                 </div>
-                <div class="hero-art"><img src="laser-hero.png" alt="Pele lisa em uma rotina de autocuidado" />
-                </div>
+                <div class="hero-image"><img src="assets/laser-hero.png"
+                        alt="Pessoa com pele lisa em uma rotina de autocuidado" /></div>
             </div>
-            <div class="proof">
-                <div class="shell proof-inner"><span>Resultados duradouros</span><span>Pele mais lisa e
-                        macia</span><span>Sessões rápidas</span><span>Conforto e bem-estar</span></div>
+            <div class="trust">
+                <div class="shell trust-row"><span>Tecnologia segura</span><span>Avaliação
+                        personalizada</span><span>Atendimento
+                        humanizado</span></div>
             </div>
         </section>
-        <section class="pricing shell" id="servicos">
-            <div class="section-heading">
-                <div><span class="eyebrow"><i></i> Condições especiais</span>
-                    <h2>Escolha sua área.<br><em>Sinta a mudança.</em></h2>
+        <section class="prices shell" id="pacotes">
+            <div class="section-intro">
+                <div>
+                    <p class="section-kicker">Pacotes de depilação</p>
+                    <h2>Valores simples,<br>escolha tranquila.</h2>
                 </div>
-                <p class="heading-note">Pagamento parcelado em até 10x. Consulte as condições na sua avaliação gratuita.
-                </p>
+                <p>Todos os valores abaixo são referentes ao pacote completo de sessões indicado.</p>
             </div>
-            <div class="price-grid">
-                <article class="price-card">
-                    <div class="card-head">
+            <div class="package-stack">
+                <article class="package">
+                    <div class="package-top">
                         <div>
-                            <h3>Mais Pedidas</h3><small>Seleção Clau</small>
-                        </div>
-                        <div class="from">A partir de <b>10x R$ 39,90</b></div>
+                            <h3 class="package-title">Pacotes de 10 sessões</h3><small>Depilação a laser</small>
+                        </div><span class="session-tag">10 sessões</span>
                     </div>
-                    <div class="offer"><span class="service">Buço, Mento (queixo) ou Costeletas</span><span
-                            class="standard">R$ 60,00</span><span class="installment">10x R$
-                            39,90<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Axilas ou Linha Alba</span><span class="standard">R$
-                            60,00</span><span class="installment">10x R$ 39,90<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Dedos / Mãos</span><span class="standard">R$
-                            60,00</span><span class="installment">10x R$ 39,90<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Virilha Simples</span><span class="standard">R$
-                            60,00</span><span class="installment">10x R$ 39,90<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Pés e Dedos</span><span class="standard">R$
-                            60,00</span><span class="installment">10x R$ 39,90<small>parcelado</small></span></div>
+                    <ul class="package-list">
+                        <li><span class="procedure">Braço Inteiro</span><span class="area">Braços e mãos</span><strong
+                                class="price">R$ 1.390,00</strong></li>
+                        <li><span class="procedure">Meia Perna (joelho para baixo) + Pés e Dedos</span><span
+                                class="area">Membros
+                                inferiores</span><strong class="price">R$ 790,00</strong></li>
+                        <li><span class="procedure">Perna Inteira</span><span class="area">Membros
+                                inferiores</span><strong class="price">R$ 1.390,00</strong></li>
+                        <li><span class="procedure">Virilha Completa + Perianal</span><span class="area">Região
+                                íntima</span><strong class="price">R$ 790,00</strong></li>
+                        <li><span class="procedure">Tórax, Abdome ou Meio Braço</span><span
+                                class="area">Tronco</span><strong class="price">R$ 790,00</strong></li>
+                        <li><span class="procedure">Rosto Inteiro ou Barba Completa</span><span class="area">Cabeça e
+                                pescoço</span><strong class="price">R$ 790,00</strong></li>
+                        <li><span class="procedure">Costas Completas ou Tórax + Abdome</span><span
+                                class="area">Tronco</span><strong class="price">R$ 1.390,00</strong></li>
+                    </ul>
                 </article>
-                <article class="price-card">
-                    <div class="card-head">
+                <article class="package">
+                    <div class="package-top">
                         <div>
-                            <h3>Transformação Visível</h3><small>Seleção Clau</small>
-                        </div>
-                        <div class="from">A partir de <b>10x R$ 79,00</b></div>
+                            <h3 class="package-title">Pacotes de 5 sessões</h3><small>Depilação a laser</small>
+                        </div><span class="session-tag">5 sessões</span>
                     </div>
-                    <div class="offer"><span class="service">Rosto Inteiro ou Barba Completa</span><span
-                            class="standard">R$ 120,00</span><span class="installment">10x R$
-                            79,00<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Tórax, Abdômen ou Meio Braço</span><span
-                            class="standard">R$ 120,00</span><span class="installment">10x R$
-                            79,00<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Virilha Completa + Perianal</span><span class="standard">R$
-                            120,00</span><span class="installment">10x R$ 79,00<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Meia Perna (Joelho para baixo)</span><span
-                            class="standard">R$ 120,00</span><span class="installment">10x R$
-                            79,00<small>parcelado</small></span></div>
-                </article>
-                <article class="price-card full">
-                    <div class="card-head">
-                        <div>
-                            <h3>Corpo Todo Liso</h3><small>Seleção Clau</small>
-                        </div>
-                        <div class="from">A partir de <b>10x R$ 139,00</b></div>
-                    </div>
-                    <div class="offer"><span class="service">Costas Completas ou Tórax + Abdômen</span><span
-                            class="standard">R$ 200,00</span><span class="installment">10x R$
-                            139,00<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Braço Inteiro</span><span class="standard">R$
-                            200,00</span><span class="installment">10x R$ 139,00<small>parcelado</small></span></div>
-                    <div class="offer"><span class="service">Perna Inteira</span><span class="standard">R$
-                            200,00</span><span class="installment">10x R$ 139,00<small>parcelado</small></span></div>
+                    <ul class="package-list">
+                        <li><span class="procedure">Dedos e Mãos</span><span class="area">Braços e mãos</span><strong
+                                class="price">R$ 695,00</strong></li>
+                        <li><span class="procedure">Dedos e Pés</span><span class="area">Membros
+                                inferiores</span><strong class="price">R$ 695,00</strong></li>
+                        <li><span class="procedure">Virilha Simples</span><span class="area">Região íntima</span><strong
+                                class="price">R$ 390,00</strong></li>
+                        <li><span class="procedure">Buço, Mento e Costeletas</span><span class="area">Cabeça e
+                                pescoço</span><strong class="price">R$ 390,00</strong></li>
+                    </ul>
                 </article>
             </div>
         </section>
-        <section class="combo" id="combos">
+        <section class="combo-section" id="combos">
             <div class="shell">
-                <div class="section-heading"><span class="eyebrow"><i></i> Mais reservados do mês</span>
-                    <h2>COMBOS QUE MAIS<br><em>TRANSFORMAM</em></h2>
+                <div class="section-intro">
+                    <div>
+                        <p class="section-kicker">Combos</p>
+                        <h2>Mais áreas, um pacote só.</h2>
+                    </div>
+                    <p>Combinações de 10 sessões para cuidar de mais de uma região em um mesmo plano.</p>
                 </div>
-                <div class="combo-wrap">
-                    <article class="combo-card"><span class="popular">★ Mais pedido</span>
-                        <h3>COMBO Essencial</h3>
-                        <p>Axilas + Virilha Completa + Perianal</p>
-                        <div class="combo-price"><span>10x de</span><b>R$ 95,00</b><small>(ou R$ 899,00 à vista)</small>
-                        </div>
+                <div class="combos">
+                    <article class="combo-card"><span class="combo-label">Combo · 10 sessões</span>
+                        <h3>Axilas + Virilha Completa + Perianal</h3>
+                        <p>Pacote de 10 sessões para as três regiões.</p>
+                        <div class="combo-price"><span>Valor do combo</span><strong>R$ 950,00</strong></div>
                     </article>
-                    <article class="combo-card"><span class="popular">Corpo pronto</span>
-                        <h3>COMBO Corpo Pronto</h3>
-                        <p>Perna Inteira + Virilha Completa + Axilas</p>
-                        <div class="combo-price"><span>10x de</span><b>R$ 169,00</b><small>(ou R$ 1.599,00 à
-                                vista)</small></div>
+                    <article class="combo-card"><span class="combo-label">Combo · 10 sessões</span>
+                        <h3>Pernas Inteiras + Virilha Completa + Axila</h3>
+                        <p>Pacote de 10 sessões para as três regiões.</p>
+                        <div class="combo-price"><span>Valor do combo</span><strong>R$ 1.690,00</strong></div>
                     </article>
                 </div>
-                <p class="combo-foot">Valores válidos para pagamento parcelado. Consulte condições na avaliação
-                    gratuita.</p>
             </div>
         </section>
-        <section class="final-cta shell" id="avaliacao">
-            <div class="cta-panel">
-                <div class="diamond">✦</div>
-                <h2>Sua pele lisa começa <em>agora.</em></h2><a class="button"
-                    href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20gratuita."
-                    target="_blank" rel="noopener"><span class="whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24">
-                            <path
-                                d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13 1.6 5.93L.14 24l6.4-1.67a11.78 11.78 0 0 0 5.54 1.41h.01c6.53 0 11.83-5.31 11.83-11.84 0-3.16-1.23-6.13-3.4-8.42Zm-8.44 18.27a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.8.99 1.02-3.7-.24-.38a9.84 9.84 0 1 1 8.39 4.67Zm5.4-7.37c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-1.78-.89-2.95-1.59-4.13-3.61-.31-.53.31-.49.89-1.64.1-.2.05-.37-.03-.52-.08-.15-.68-1.64-.93-2.24-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z" />
-                        </svg></span> QUERO MINHA AVALIAÇÃO GRATUITA</a>
-                <p>Agende sua avaliação pelo WhatsApp: <strong>(11) 9 6135-5909</strong>.</p>
+        <section class="how shell" id="como-funciona">
+            <div class="section-intro">
+                <div>
+                    <p class="section-kicker">Seu atendimento</p>
+                    <h2>Da escolha ao cuidado.</h2>
+                </div>
+                <p>Um caminho direto para encontrar o pacote que faz sentido para sua rotina.</p>
+            </div>
+            <div class="steps">
+                <article class="step"><span class="step-number">01</span>
+                    <h3>Fale pelo WhatsApp</h3>
+                    <p>Conte o que você busca e tire suas primeiras dúvidas.</p>
+                </article>
+                <article class="step"><span class="step-number">02</span>
+                    <h3>Faça sua avaliação</h3>
+                    <p>Receba orientação personalizada antes de iniciar.</p>
+                </article>
+                <article class="step"><span class="step-number">03</span>
+                    <h3>Escolha seu pacote</h3>
+                    <p>Defina as regiões e o pacote de sessões ideal para você.</p>
+                </article>
+            </div>
+        </section>
+        <section class="final shell">
+            <div class="final-box">
+                <h2>Pronta para deixar a rotina mais leve?</h2>
+                <p>Agende sua avaliação e receba orientação para escolher seu pacote.</p><a class="button"
+                    href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o."
+                    target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-brand">Clau Estética</div><small>Enfermeira · Depilação a laser</small>
-    </footer>
-    <div class="mobile-book"><a class="button"
-            href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20gratuita."
-            target="_blank" rel="noopener"><span class="whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24">
-                    <path
-                        d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.55 0 .24 5.31.24 11.84c0 2.09.55 4.13 1.6 5.93L.14 24l6.4-1.67a11.78 11.78 0 0 0 5.54 1.41h.01c6.53 0 11.83-5.31 11.83-11.84 0-3.16-1.23-6.13-3.4-8.42Zm-8.44 18.27a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.8.99 1.02-3.7-.24-.38a9.84 9.84 0 1 1 8.39 4.67Zm5.4-7.37c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.18.2-.35.22-.65.07-1.78-.89-2.95-1.59-4.13-3.61-.31-.53.31-.49.89-1.64.1-.2.05-.37-.03-.52-.08-.15-.68-1.64-.93-2.24-.25-.59-.5-.51-.68-.52h-.58c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.49s1.08 2.89 1.23 3.09c.15.2 2.13 3.25 5.16 4.56.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z" />
-                </svg></span> AGENDAR AVALIAÇÃO GRATUITA</a></div>
+    <footer>Clau Estética · Enfermeira · Depilação a laser</footer>
+    <a class="mobile-cta button"
+        href="https://wa.me/5511961355909?text=Ol%C3%A1%2C%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o."
+        target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
 </body>
 
 </html>
